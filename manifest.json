@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "Test1",
+  "version": "1.0",
+
+  "description": "Dodaje czerwoną ramkę we wszystkich stronach powiązanych z domeną mozilla.org.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://dlsp6.e-oswiata.olesnica.pl/nauczyciel/rozklad?id*"],
+      "js": ["./jQuery.js" ,"script1.js"]
+    }
+  ]
+
+}
+
+
+
+
